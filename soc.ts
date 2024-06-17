@@ -65,18 +65,22 @@ export enum SearchBy {
     COURSE_CODE = "Course Code",
     COURSE_TITLE = "Course Title",
     INSTRUCTOR = "Instructor",
+    SECTION_NUMBER = "Section Number", // i added this
+
 }
 
 export const SearchBys = [
     SearchBy.COURSE_CODE,
     SearchBy.COURSE_TITLE,
     SearchBy.INSTRUCTOR,
+    SearchBy.SECTION_NUMBER, // i added this
 ];
 
 const SearchByStringMap = new Map([
     ["course-code", SearchBy.COURSE_CODE],
     ["course-title", SearchBy.COURSE_TITLE],
     ["instructor", SearchBy.INSTRUCTOR],
+    ["section-number", SearchBy.SECTION_NUMBER], // i added this
 ]);
 
 export function getSearchBy(searchByStr: string): SearchBy {
