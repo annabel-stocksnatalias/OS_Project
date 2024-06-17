@@ -16,7 +16,7 @@ const SearchByStringExampleMap = new Map([
     ["course-code", "MAS3114"],
     ["course-title", "Linear Algebra"],
     ["instructor", "Huang"],
-    ["section-number", "20611"],
+    ["section-number", "20611"], // i added this
 ]);
 
 export function getSearchByStringExample(searchByStr: string): string {
